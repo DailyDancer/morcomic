@@ -40,9 +40,15 @@ class DataBlackholeOverlay extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 16),
-                  Text(
-                    'DATA BLACKHOLE',
-                    style: textTheme.labelLarge,
+                  Flexible(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        'DATA BLACKHOLE',
+                        style: textTheme.labelLarge,
+                      ),
+                    ),
                   ),
                 ],
               ),

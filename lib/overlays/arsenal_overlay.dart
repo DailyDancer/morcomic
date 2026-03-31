@@ -69,8 +69,14 @@ class _ArsenalOverlayState extends State<ArsenalOverlay> {
                     ),
                   ),
                   const SizedBox(width: 16),
-                  Text('THE ARSENAL', style: textTheme.labelLarge),
-                  const Spacer(),
+                  Flexible(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: Text('THE ARSENAL', style: textTheme.labelLarge),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
                   Row(
                     children: [
                       Container(

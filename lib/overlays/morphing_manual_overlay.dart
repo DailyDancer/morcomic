@@ -41,9 +41,15 @@ class MorphingManualOverlay extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 16),
-                  Text(
-                    'MORPHING MANUAL',
-                    style: textTheme.labelLarge,
+                  Flexible(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        'MORPHING MANUAL',
+                        style: textTheme.labelLarge,
+                      ),
+                    ),
                   ),
                 ],
               ),

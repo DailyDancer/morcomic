@@ -59,9 +59,15 @@ class _CalibrationsOverlayState extends State<CalibrationsOverlay> {
                     ),
                   ),
                   const SizedBox(width: 16),
-                  Text(
-                    'CALIBRATIONS',
-                    style: textTheme.labelLarge,
+                  Flexible(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        'CALIBRATIONS',
+                        style: textTheme.labelLarge,
+                      ),
+                    ),
                   ),
                 ],
               ),
