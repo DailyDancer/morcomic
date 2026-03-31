@@ -1,0 +1,98 @@
+# ============================================================
+# Cosmic Morph — .gitignore
+# Goal: push ONLY source code. Exclude all build artifacts,
+#       IDE state, and machine-specific files that could
+#       contain local paths, usernames, or system info.
+# ============================================================
+
+# ------ OS-generated files ------
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+*.swp
+*.swo
+*~
+
+# ------ IDE / Editor state (contains local paths) ------
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+
+# ------ Flutter / Dart tooling (contains local absolute paths) ------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+.metadata
+migrate_working_dir/
+
+# ------ Build outputs ------
+/build/
+/coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+
+# Android build variants
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ------ Android machine-specific (contains local SDK/user paths) ------
+/android/local.properties
+/android/.gradle/
+/android/captures/
+/android/gradlew
+/android/gradlew.bat
+/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+.cxx/
+
+# Signing (never commit keystores or secrets)
+key.properties
+*.keystore
+*.jks
+*.pem
+*.p12
+*_base64_encoded.txt
+upload-keystore.*
+
+# ------ iOS machine-specific (contains local paths) ------
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/DerivedData/
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/ServiceDefinitions.json
+**/ios/xcuserdata/
+**/ios/**/.generated/
+
+# ------ Web build output ------
+/web/favicon.png
+/web/icons/
+
+# ------ Symbolication & obfuscation maps ------
+app.*.symbols
+app.*.map.json
+
+# ------ Miscellaneous ------
+*.class
+*.log
+*.pyc

@@ -1,0 +1,51 @@
+name: cosmic_morph
+description: "Cosmic Morph - A game built with Flutter and Flame."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flame: ^1.36.0
+  shared_preferences: ^2.5.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Orbitron
+      fonts:
+        - asset: assets/font/Orbitron-Regular.ttf
+          weight: 400
+        - asset: assets/font/Orbitron-Medium.ttf
+          weight: 500
+        - asset: assets/font/Orbitron-SemiBold.ttf
+          weight: 600
+        - asset: assets/font/Orbitron-Bold.ttf
+          weight: 700
+        - asset: assets/font/Orbitron-ExtraBold.ttf
+          weight: 800
+        - asset: assets/font/Orbitron-Black.ttf
+          weight: 900
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/images/logo.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/images/logo.png"
