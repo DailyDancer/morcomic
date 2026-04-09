@@ -1,6 +1,6 @@
 {
-    "name": "cosmic_morph",
-    "short_name": "cosmic_morph",
+    "name": "neon_grid_action_runner",
+    "short_name": "neon_grid_action_runner",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

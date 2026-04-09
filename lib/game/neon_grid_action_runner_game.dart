@@ -12,7 +12,7 @@ import '../services/haptic_service.dart';
 import '../services/storage_service.dart';
 import 'gate_manager.dart';
 
-class CosmicMorphGame extends FlameGame
+class NeonGridActionRunnerGame extends FlameGame
     with HasCollisionDetection, DragCallbacks, TapCallbacks {
   late Player player;
   late GateManager gateManager;

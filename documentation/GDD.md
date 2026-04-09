@@ -1,8 +1,8 @@
-# Game Design Document: Cosmic Morph
+# Game Design Document: Neon Grid Action Runner
 
 ## 1. Overview
 
-**Cosmic Morph** is an infinite-style 2D runner built with Flutter and Flame, targeting Android (Google Play) as the primary release platform. The player controls a malleable energy spirit traveling through a cosmic tunnel. Instead of jumping or shooting, the player must rapidly shift their physical form to match geometric cutouts in approaching barriers called Matter Gates.
+**Neon Grid Action Runner** is an infinite-style 2D runner built with Flutter and Flame, targeting Android (Google Play) as the primary release platform. The player controls a malleable energy spirit traveling through a cosmic tunnel. Instead of jumping or shooting, the player must rapidly shift their physical form to match geometric cutouts in approaching barriers called Matter Gates.
 
 The game is designed to be simple to build, engaging to play, and polished enough to meet Google Play's quality standards.
 
@@ -102,7 +102,7 @@ All UI uses thematic terminology to maintain immersion. There are no generic "Pl
 * Keep the number of skins small (6-8 total) to keep scope manageable.
 
 ### Data Blackhole (Privacy Policy)
-* A scrollable text screen stating that Cosmic Morph is fully offline and collects no personal data.
+* A scrollable text screen stating that Neon Grid Action Runner is fully offline and collects no personal data.
 
 ---
 

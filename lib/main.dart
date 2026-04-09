@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 import 'config/app_colors.dart';
 import 'config/app_theme.dart';
-import 'game/cosmic_morph_game.dart';
+import 'game/neon_grid_action_runner_game.dart';
 import 'overlays/arsenal_overlay.dart';
 import 'overlays/calibrations_overlay.dart';
 import 'overlays/cosmic_hub_overlay.dart';
@@ -38,34 +38,34 @@ class GameScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.deepSpace,
-      body: GameWidget<CosmicMorphGame>.controlled(
-        gameFactory: CosmicMorphGame.new,
+      body: GameWidget<NeonGridActionRunnerGame>.controlled(
+        gameFactory: NeonGridActionRunnerGame.new,
         overlayBuilderMap: {
-          'Singularity': (BuildContext context, CosmicMorphGame game) {
+          'Singularity': (BuildContext context, NeonGridActionRunnerGame game) {
             return SingularityOverlay(game: game);
           },
-          'CosmicHub': (BuildContext context, CosmicMorphGame game) {
+          'CosmicHub': (BuildContext context, NeonGridActionRunnerGame game) {
             return CosmicHubOverlay(game: game);
           },
-          'GameHUD': (BuildContext context, CosmicMorphGame game) {
+          'GameHUD': (BuildContext context, NeonGridActionRunnerGame game) {
             return GameHudOverlay(game: game);
           },
-          'TemporalStasis': (BuildContext context, CosmicMorphGame game) {
+          'TemporalStasis': (BuildContext context, NeonGridActionRunnerGame game) {
             return TemporalStasisOverlay(game: game);
           },
-          'FormCollapsed': (BuildContext context, CosmicMorphGame game) {
+          'FormCollapsed': (BuildContext context, NeonGridActionRunnerGame game) {
             return FormCollapsedOverlay(game: game);
           },
-          'MorphingManual': (BuildContext context, CosmicMorphGame game) {
+          'MorphingManual': (BuildContext context, NeonGridActionRunnerGame game) {
             return MorphingManualOverlay(game: game);
           },
-          'Calibrations': (BuildContext context, CosmicMorphGame game) {
+          'Calibrations': (BuildContext context, NeonGridActionRunnerGame game) {
             return CalibrationsOverlay(game: game);
           },
-          'Arsenal': (BuildContext context, CosmicMorphGame game) {
+          'Arsenal': (BuildContext context, NeonGridActionRunnerGame game) {
             return ArsenalOverlay(game: game);
           },
-          'DataBlackhole': (BuildContext context, CosmicMorphGame game) {
+          'DataBlackhole': (BuildContext context, NeonGridActionRunnerGame game) {
             return DataBlackholeOverlay(game: game);
           },
         },

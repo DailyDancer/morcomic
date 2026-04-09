@@ -5,9 +5,9 @@ import 'package:flame/components.dart';
 import '../components/matter_gate.dart';
 import '../components/star_bit.dart';
 import '../config/shape_state.dart';
-import 'cosmic_morph_game.dart';
+import 'neon_grid_action_runner_game.dart';
 
-class GateManager extends Component with HasGameReference<CosmicMorphGame> {
+class GateManager extends Component with HasGameReference<NeonGridActionRunnerGame> {
   static const int _poolSize = 5;
   static const int _starBitsPerGap = 3;
 

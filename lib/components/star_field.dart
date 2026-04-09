@@ -4,7 +4,7 @@ import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
 
 import '../config/app_colors.dart';
-import '../game/cosmic_morph_game.dart';
+import '../game/neon_grid_action_runner_game.dart';
 
 class _Star {
   double x;
@@ -23,7 +23,7 @@ class _Star {
 }
 
 class StarFieldLayer extends PositionComponent
-    with HasGameReference<CosmicMorphGame> {
+    with HasGameReference<NeonGridActionRunnerGame> {
   StarFieldLayer({
     required this.starCount,
     required this.baseSpeed,
@@ -85,7 +85,7 @@ class StarFieldLayer extends PositionComponent
   }
 }
 
-class StarField extends Component with HasGameReference<CosmicMorphGame> {
+class StarField extends Component with HasGameReference<NeonGridActionRunnerGame> {
   @override
   Future<void> onLoad() async {
     await super.onLoad();

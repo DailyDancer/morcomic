@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 
 import '../config/app_colors.dart';
 import '../config/shape_state.dart';
-import '../game/cosmic_morph_game.dart';
+import '../game/neon_grid_action_runner_game.dart';
 import 'player.dart';
 
 class MatterGate extends PositionComponent
-    with CollisionCallbacks, HasGameReference<CosmicMorphGame> {
+    with CollisionCallbacks, HasGameReference<NeonGridActionRunnerGame> {
   MatterGate({required ShapeState requiredShape})
       : _requiredShape = requiredShape,
         super(size: Vector2(40, 300));

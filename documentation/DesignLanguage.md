@@ -1,6 +1,6 @@
-# Design Language System: Cosmic Morph
+# Design Language System: Neon Grid Action Runner
 
-This document defines the visual identity for Cosmic Morph. Every color, font choice, spacing rule, and component style described here should be implemented as constants and theme data so the entire app inherits a consistent look automatically.
+This document defines the visual identity for Neon Grid Action Runner. Every color, font choice, spacing rule, and component style described here should be implemented as constants and theme data so the entire app inherits a consistent look automatically.
 
 ---
 

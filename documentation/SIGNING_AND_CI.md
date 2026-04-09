@@ -111,7 +111,7 @@ Both `key.properties` and `*.jks` are excluded by `.gitignore`.
 
 ## 6. ProGuard / R8 Configuration
 
-The file `android/app/proguard-rules.pro` contains `-dontwarn` rules for Google Play Core classes that Flutter references for deferred components. Since Cosmic Morph does not use deferred components, these rules tell R8 to safely ignore the missing classes during release builds.
+The file `android/app/proguard-rules.pro` contains `-dontwarn` rules for Google Play Core classes that Flutter references for deferred components. Since Neon Grid Action Runner does not use deferred components, these rules tell R8 to safely ignore the missing classes during release builds.
 
 No action is required — the rules are applied automatically via `build.gradle.kts`.
 

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 import '../config/app_colors.dart';
-import '../game/cosmic_morph_game.dart';
+import '../game/neon_grid_action_runner_game.dart';
 
 class SingularityOverlay extends StatefulWidget {
   const SingularityOverlay({super.key, required this.game});
 
-  final CosmicMorphGame game;
+  final NeonGridActionRunnerGame game;
 
   @override
   State<SingularityOverlay> createState() => _SingularityOverlayState();

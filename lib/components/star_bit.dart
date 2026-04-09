@@ -3,11 +3,11 @@ import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
 
 import '../config/app_colors.dart';
-import '../game/cosmic_morph_game.dart';
+import '../game/neon_grid_action_runner_game.dart';
 import 'player.dart';
 
 class StarBit extends PositionComponent
-    with CollisionCallbacks, HasGameReference<CosmicMorphGame> {
+    with CollisionCallbacks, HasGameReference<NeonGridActionRunnerGame> {
   StarBit() : super(size: Vector2.all(20), anchor: Anchor.center);
 
   bool isVisible = false;

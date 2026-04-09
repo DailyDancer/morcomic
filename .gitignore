@@ -1,5 +1,5 @@
 # ============================================================
-# Cosmic Morph — .gitignore
+# Neon Grid Action Runner — .gitignore
 # Goal: push ONLY source code. Exclude all build artifacts,
 #       IDE state, and machine-specific files that could
 #       contain local paths, usernames, or system info.

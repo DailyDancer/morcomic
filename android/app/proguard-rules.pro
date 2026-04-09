@@ -1,4 +1,4 @@
-# Cosmic Morph — ProGuard / R8 Rules
+# Neon Grid Action Runner — ProGuard / R8 Rules
 #
 # Flutter's deferred components reference Google Play Core classes for dynamic
 # feature modules. Since this app does NOT use deferred components and does NOT

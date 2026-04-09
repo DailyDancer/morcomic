@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================
-# Cosmic Morph — Keystore Generator
+# Neon Grid Action Runner — Keystore Generator
 #
 # This script prompts ONLY for company/organization details.
 # It does NOT read, detect, or auto-fill any system, user,
@@ -16,7 +16,7 @@ KEY_ALIAS="upload"
 VALIDITY_DAYS=10000
 
 echo "============================================"
-echo " Cosmic Morph — Keystore Generator"
+echo " Neon Grid Action Runner — Keystore Generator"
 echo "============================================"
 echo ""
 echo "This script will ask for company details only."

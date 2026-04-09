@@ -3,12 +3,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../config/app_colors.dart';
-import '../game/cosmic_morph_game.dart';
+import '../game/neon_grid_action_runner_game.dart';
 
 class GameHudOverlay extends StatefulWidget {
   const GameHudOverlay({super.key, required this.game});
 
-  final CosmicMorphGame game;
+  final NeonGridActionRunnerGame game;
 
   @override
   State<GameHudOverlay> createState() => _GameHudOverlayState();

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../config/app_colors.dart';
-import '../game/cosmic_morph_game.dart';
+import '../game/neon_grid_action_runner_game.dart';
 import '../services/storage_service.dart';
 
 class CosmicHubOverlay extends StatelessWidget {
   const CosmicHubOverlay({super.key, required this.game});
 
-  final CosmicMorphGame game;
+  final NeonGridActionRunnerGame game;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class CosmicHubOverlay extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               Text(
-                'COSMIC MORPH',
+                'NEON GRID ACTION RUNNER',
                 style: textTheme.displayMedium?.copyWith(fontSize: 32),
               ),
               const SizedBox(height: 8),

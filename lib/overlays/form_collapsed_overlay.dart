@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../config/app_colors.dart';
-import '../game/cosmic_morph_game.dart';
+import '../game/neon_grid_action_runner_game.dart';
 import '../services/storage_service.dart';
 
 class FormCollapsedOverlay extends StatelessWidget {
   const FormCollapsedOverlay({super.key, required this.game});
 
-  final CosmicMorphGame game;
+  final NeonGridActionRunnerGame game;
 
   @override
   Widget build(BuildContext context) {

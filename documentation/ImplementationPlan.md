@@ -1,6 +1,6 @@
-# Implementation Plan: Cosmic Morph
+# Implementation Plan: Neon Grid Action Runner
 
-This is the step-by-step build plan for Cosmic Morph. It is organized into sequential phases so that each phase produces a testable result before moving to the next. The game uses Flutter for all UI screens and Flame for the gameplay rendering and loop.
+This is the step-by-step build plan for Neon Grid Action Runner. It is organized into sequential phases so that each phase produces a testable result before moving to the next. The game uses Flutter for all UI screens and Flame for the gameplay rendering and loop.
 
 Reference the **Game Design Document (GDD)** for what the game does, and the **Design Language System (DLS)** for how it looks. This plan covers how to build it.
 
@@ -36,11 +36,11 @@ Implement the DLS as the app's global theme:
 
 * Set up a centralized constants file defining all the colors from the DLS palette (Deep Space, Sphere Cyan, Apex Magenta, Block Yellow, Star Bit White, Fail Red-Orange, Stardust).
 * Configure the app-level ThemeData using Orbitron as the default font, with the text style hierarchy from the DLS (Display, Button, HUD, Body).
-* Set the Flame game class background color to Deep Space (`#0B0C10`). This replaces the current placeholder color in `cosmic_morph_game.dart`.
+* Set the Flame game class background color to Deep Space (`#0B0C10`). This replaces the current placeholder color in `neon_grid_action_runner_game.dart`.
 
 ### 1.4 Game Class Setup
 
-The main game class (`CosmicMorphGame`) extending `FlameGame` needs to be set up with:
+The main game class (`NeonGridActionRunnerGame`) extending `FlameGame` needs to be set up with:
 
 * Collision detection mixin enabled.
 * Vertical drag detection for swipe input handling.
@@ -209,7 +209,7 @@ Build the main menu following the DLS layout rules:
 ### 4.10 Data Blackhole (Privacy Policy)
 
 * A scrollable text screen with the privacy policy statement.
-* Content: "Cosmic Morph is a fully offline game. It does not collect, store, or transmit any personal data, usage analytics, or telemetry. All game data (scores, preferences, purchases) is stored locally on your device."
+* Content: "Neon Grid Action Runner is a fully offline game. It does not collect, store, or transmit any personal data, usage analytics, or telemetry. All game data (scores, preferences, purchases) is stored locally on your device."
 * A close/back button to return to the Cosmic Hub.
 
 ---
@@ -272,7 +272,7 @@ Test the complete user journey end-to-end:
 
 ### 6.3 App Icon & Store Assets
 
-* Create an app icon that reflects the Cosmic Morph identity (a glowing shape on the Deep Space background).
+* Create an app icon that reflects the Neon Grid Action Runner identity (a glowing shape on the Deep Space background).
 * Prepare Play Store listing assets: feature graphic, screenshots of key screens (gameplay, menu, shop).
 
 ### 6.4 Android Configuration
