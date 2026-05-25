@@ -1,7 +1,7 @@
 name: neon_grid_action_runner
 description: "Neon Grid Action Runner - A game built with Flutter and Flame."
 publish_to: 'none'
-version: 0.2.0+2
+version: 0.2.1+3
 
 environment:
   sdk: ^3.11.4
