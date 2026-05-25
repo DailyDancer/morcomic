@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../config/app_colors.dart';
 import '../game/neon_grid_action_runner_game.dart';
 import '../services/storage_service.dart';
+import '../widgets/app_background.dart';
 
 class CosmicHubOverlay extends StatelessWidget {
   const CosmicHubOverlay({super.key, required this.game});
@@ -13,8 +14,7 @@ class CosmicHubOverlay extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
 
-    return Container(
-      color: AppColors.deepSpace,
+    return MenuBackground(
       child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),

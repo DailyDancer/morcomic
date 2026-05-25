@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../config/app_colors.dart';
 import '../game/neon_grid_action_runner_game.dart';
+import '../widgets/app_background.dart';
 
 class DataBlackholeOverlay extends StatelessWidget {
   const DataBlackholeOverlay({super.key, required this.game});
@@ -12,8 +13,7 @@ class DataBlackholeOverlay extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
 
-    return Container(
-      color: AppColors.deepSpace,
+    return InnerPageBackground(
       child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24),

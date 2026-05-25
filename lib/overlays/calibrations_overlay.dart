@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../config/app_colors.dart';
 import '../game/neon_grid_action_runner_game.dart';
 import '../services/storage_service.dart';
+import '../widgets/app_background.dart';
 
 class CalibrationsOverlay extends StatefulWidget {
   const CalibrationsOverlay({super.key, required this.game});
@@ -31,8 +32,7 @@ class _CalibrationsOverlayState extends State<CalibrationsOverlay> {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
 
-    return Container(
-      color: AppColors.deepSpace,
+    return InnerPageBackground(
       child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24),

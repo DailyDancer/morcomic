@@ -4,6 +4,7 @@ import '../config/app_colors.dart';
 import '../config/skin_data.dart';
 import '../game/neon_grid_action_runner_game.dart';
 import '../services/storage_service.dart';
+import '../widgets/app_background.dart';
 
 class ArsenalOverlay extends StatefulWidget {
   const ArsenalOverlay({super.key, required this.game});
@@ -41,8 +42,7 @@ class _ArsenalOverlayState extends State<ArsenalOverlay> {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
 
-    return Container(
-      color: AppColors.deepSpace,
+    return InnerPageBackground(
       child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../config/app_colors.dart';
 import '../config/shape_state.dart';
 import '../game/neon_grid_action_runner_game.dart';
+import '../widgets/app_background.dart';
 
 class MorphingManualOverlay extends StatelessWidget {
   const MorphingManualOverlay({super.key, required this.game});
@@ -13,8 +14,7 @@ class MorphingManualOverlay extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
 
-    return Container(
-      color: AppColors.deepSpace,
+    return InnerPageBackground(
       child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24),
